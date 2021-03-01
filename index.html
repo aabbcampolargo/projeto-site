@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AABB Campo Largo</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logo"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">teste</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+
+    <header>
+        <a href="#" class="logo">AABB <span>C</span>ampo <span>L</span>argo</a>
+        <ul class="navigation">
+            <li>
+                <a href="#banner">Home</a>
+            </li>
+            <li>
+                <a href="#">Pagina 1</a>
+            </li>
+            <li>
+                <a href="#">Pagina 2</a>
+            </li>
+            <li>
+                <a href="#">Pagina 3</a>
+            </li>
         </ul>
-    </nav>
+    </header>
+    <section class="banner" id="banner">
+        <div class="parceiros"><img src="/image/parceiros.jpg" alt=""></div>
+        <div class="card middle">
+            <div class="front">
+                <img src="/image/Logobanner.jpg" alt="">
+            </div>
+            <div class="back">
+                <img src="/image/fenabinho.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="parceiros"><img src="/image/parceiros.jpg" alt=""></div>
+    </section>
+
+
+
+    <script type=" text/javascript ">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky ", window.scrollY > 0);
+        });
+    </script>
 </body>
+
 </html>
